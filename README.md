@@ -1,10 +1,11 @@
 Este proyecto es una Api Rest creada de manera permanete con una base de datos en postgresql
 Conocimientos adquiridos en el curso de backend con nodejs y postgresql
-el linnk del repositorio en github es https://github.com/jeliasalvaradoa/mystoreapi
-y el despliegue se hizo en render.com https://mystoreapi.onrender.com/
+el linnk del repositorio en github es https://github.com/jeliasalvaradoa/mybackenstore
+y el despliegue se hizo en render.com https://mybackenapi.onrender.com
 la base de datos de postgresql se creo en render.com
 Los endpoint son (
 /api/v1/users,
+/api/v1/profile,
 /api/v1/customers,
 /api/v1/orders/id,
 /api/v1/categories,
@@ -58,10 +59,16 @@ y se creara despues de pocos segundos la base de datos agregagando la siguiente 
 
 10. OJO => luego un paso muy importante antes de presionar el boton de create web service es agregar las variables de entorno o de ambiente!
 para ello hacemos click en advanced => se desplegara un boton de Add Environment Variables con el cual debenos crear 
-las dos variables de entorno que estan en el Dockerfile las cuales son 
+las variables de entorno que estan en el Dockerfile las cuales son 
  
-*key => NODE_ENV value => production
-*key => DATABASE_URL value => OJO aqui va el valor que te genero render de la conexión de la base de datos que creastes! el valor que esta en Internal Database URL
+NODE_ENV
+DATABASE_URL
+API_KEY
+JWT_SECRET
+SMTP_EMAIL
+SMTP_PASSWORD
+
+Nota: asignar los valores  a cada variable según corresponda
 
 11. Luego los demas campos se dejan como estan por defecto; recomiendo no modificarlos si no sabeslo que haces a menos que seas experto
 
