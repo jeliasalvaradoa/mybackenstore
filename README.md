@@ -1,6 +1,6 @@
 Este proyecto es una Api Rest creada de manera permanete con una base de datos en postgresql
-Conocimientos adquiridos en el curso de backend con nodejs y postgresql
-el linnk del repositorio en github es https://github.com/jeliasalvaradoa/mybackenstore
+Conocimientos adquiridos en el Curso de Backend con Node.js: Autenticación con Passport.js y JWT
+el link del repositorio en github es https://github.com/jeliasalvaradoa/mybackenstore
 y el despliegue se hizo en render.com https://mybackenapi.onrender.com
 la base de datos de postgresql se creo en render.com
 Los endpoint son (
@@ -55,24 +55,24 @@ y se creara despues de pocos segundos la base de datos agregagando la siguiente 
 *Root: Directorio es opcional! es si quieres indicar una ruta para el deploy. Por lo general es la raiz 
 *Runtime: seleccionamos la rutina! en este caso lo hciomos usando Docker (Debo agregar que es fantastico las cosas que se pueden hacer con docker y la facilidad que brinda para hacer diferentes tareas).
 
-9. Aquí también se debe selccionar el plan de pago! en este caso selccionamos free
+9. Aquí también se debe selccionar el plan de pago! en este caso seleccionamos free
 
 10. OJO => luego un paso muy importante antes de presionar el boton de create web service es agregar las variables de entorno o de ambiente!
 para ello hacemos click en advanced => se desplegara un boton de Add Environment Variables con el cual debenos crear 
 las variables de entorno que estan en el Dockerfile las cuales son 
  
-NODE_ENV
-DATABASE_URL
-API_KEY
-JWT_SECRET
-SMTP_EMAIL
+NODE_ENV,
+DATABASE_URL,
+API_KEY,
+JWT_SECRET,
+SMTP_EMAIL,
 SMTP_PASSWORD
 
 Nota: asignar los valores  a cada variable según corresponda
 
-11. Luego los demas campos se dejan como estan por defecto; recomiendo no modificarlos si no sabeslo que haces a menos que seas experto
+11. Luego los demas campos se dejan como estan por defecto; recomiendo no modificarlos si no sabes lo que haces a menos que seas experto
 
-12. finalizamos presionando el boton de Create Web Service
+12. Finalizamos presionando el boton de Create Web Service
 
 Se esperan unos minutos tal vez segundo y listo estara tu API REST desplegada listo para ser consumida
 
